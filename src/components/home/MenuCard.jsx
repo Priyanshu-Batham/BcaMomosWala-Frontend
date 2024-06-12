@@ -18,7 +18,7 @@ const MenuCard = ({ itemNum, momosImg, price, title, addToCart, delay }) => {
       <div>Item {itemNum}</div>
       <main>
         <img src={momosImg} alt={itemNum} />
-        <h5>Price: ₹{price}</h5>
+        <h5>Price: ₹ {price}</h5>
         <p>{title}</p>
         <button
           onClick={() => {
