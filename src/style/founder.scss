@@ -1,0 +1,36 @@
+@import 'colors';
+
+.founder{
+    overflow-x: hidden;
+    height: 80vh;
+    background-color: $red;
+
+    > div{
+        // height: 100%;
+        width: 50%;
+        margin: auto;
+        margin-top: 200px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        > img{
+            border-radius: 100%;
+        }
+
+        >h3{
+            font-size: 1.3rem;
+            padding: 2rem 0 1rem 0;
+        }
+        
+        >p {
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            font-family: cursive;
+            line-height: 200%;
+        }
+    }
+}
