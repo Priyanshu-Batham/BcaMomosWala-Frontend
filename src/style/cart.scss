@@ -1,0 +1,48 @@
+@import "colors";
+
+.cart {
+  height: 100vh;
+  background-color: $pink;
+
+  > main {
+    height: 100%;
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+
+    > article {
+      padding: 2rem;
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+      }
+
+      > a{
+        background-color: $red;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 2rem;
+        float: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+    .cart{
+        >main{
+            padding: 0;
+        }
+    }
+
+    .cart>main>article>a{
+        float: none;
+        width: 100%;
+        display: block;
+    }
+}

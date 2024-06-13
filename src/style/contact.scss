@@ -1,0 +1,67 @@
+@import 'colors';
+
+.contact{
+    height: 100vh;
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 2rem;
+        width: 40%;
+        height: 80%;
+        border: 5px solid $red;
+        border-radius: 50% 0 50% 0;
+
+        >h2 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-family: Roboto;
+            margin: 2rem 0;
+        }
+
+        > input, textarea, button{
+            outline: 2px solid $red;
+            padding: 1rem;
+            width: 60%;
+            border: 1px solid rgb(202, 202, 202);
+            margin: 0.5rem;
+            border-radius: 10px;
+        }
+
+        > button{
+            background-color: $red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            &:hover{
+                background-color: $darkRed;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact{
+        >form{
+            width: 90%;
+            height: 70%;
+            border-radius: 20% 0 20% 0;
+
+            > input, textarea, button{
+                width: 90%;
+            }
+        }
+
+        
+    }
+}

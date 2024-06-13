@@ -1,0 +1,58 @@
+@import "colors";
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+  margin: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 5px;
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    > h4 {
+      font-weight: 200;
+      letter-spacing: 2px;
+    }
+
+    > img {
+      height: 50px;
+      margin: 0 1rem;
+    }
+
+    > input {
+      text-align: center;
+      width: 2rem;
+      height: 2rem;
+      border: none;
+      margin: 0.25rem;
+      outline: none;
+      border-radius: 5px;
+    }
+
+    > button {
+      cursor: pointer;
+      border: none;
+      background-color: $dark;
+      padding: 0.5rem;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cartItem > div {
+    > h4 {
+      width: 90px;
+      word-wrap: break-word;
+    }
+
+    > img{
+        margin: 0;
+    }
+  }
+}

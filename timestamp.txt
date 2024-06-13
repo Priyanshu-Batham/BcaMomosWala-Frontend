@@ -1,3 +1,5 @@
 22:35 @ colors
 1:10:21 @ menu completed 
 1:19:32 @home page completed
+1:49:16 @cartItems
+2:18:49 @shipping page completed
