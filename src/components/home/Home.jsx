@@ -14,7 +14,7 @@ const Home = () => {
             initial={{ x: "-100%", opacity: 0 }}
             whileInView={{
               x: 0,
-              opacity: 1,
+              opacity: 1
             }}
           >
             BCA Momos Wala
@@ -23,7 +23,7 @@ const Home = () => {
             initial={{ x: "-100%", opacity: 0 }}
             whileInView={{
               x: 0,
-              opacity: 1,
+              opacity: 1
             }}
             transition={{ delay: 0.2 }}
           >
@@ -35,7 +35,7 @@ const Home = () => {
             initial={{ y: "-100%", opacity: 0 }}
             whileInView={{
               y: 0,
-              opacity: 1,
+              opacity: 1
             }}
             transition={{ delay: 0.5 }}
           >
