@@ -18,7 +18,6 @@ const Menu = () => {
           price={70}
           title={"Spicy Fried Momos"}
           addToCart={addToCart}
-          delay={0.2}
         />
         <MenuCard
           itemNum={2}
@@ -26,7 +25,6 @@ const Menu = () => {
           price={100}
           title={"Plain Steamed Momos"}
           addToCart={addToCart}
-          delay={0.4}
         />
         <MenuCard
           itemNum={3}
@@ -34,7 +32,6 @@ const Menu = () => {
           price={150}
           title={"Special Dragon Momos"}
           addToCart={addToCart}
-          delay={0.8}
         />
       </div>
     </section>

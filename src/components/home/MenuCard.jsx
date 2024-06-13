@@ -1,20 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 
-const MenuCard = ({ itemNum, momosImg, price, title, addToCart, delay }) => {
+const MenuCard = ({ itemNum, momosImg, price, title, addToCart }) => {
   return (
-    <motion.div
-      initial={{
-        x: "-100%",
-        opacity: 0
-      }}
-      whileInView={{
-        x: 0,
-        opacity: 1
-      }}
-      transition={{delay: delay}}
-      className="menuCard"
-    >
+    <div className="menuCard">
       <div>Item {itemNum}</div>
       <main>
         <img src={momosImg} alt={itemNum} />
@@ -28,7 +16,7 @@ const MenuCard = ({ itemNum, momosImg, price, title, addToCart, delay }) => {
           Buy Now
         </button>
       </main>
-    </motion.div>
+    </div>
   );
 };
 
