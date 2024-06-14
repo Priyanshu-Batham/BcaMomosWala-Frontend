@@ -6,6 +6,9 @@ import Footer from './components/layout/Footer'
 import Contact from './components/contact/Contact';
 import Cart from './components/cart/Cart'
 import Shipping from './components/cart/Shipping';
+import ConfirmOrder from './components/cart/ConfirmOrder';
+import PaymentSuccess from './components/cart/PaymentSuccess';
+import Login from './components/login/Login';
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/shipping" element={<Shipping />} />
+        <Route path="/confirmorder" element={<ConfirmOrder />} />
+        <Route path="/paymentsuccess" element={<PaymentSuccess />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </BrowserRouter>

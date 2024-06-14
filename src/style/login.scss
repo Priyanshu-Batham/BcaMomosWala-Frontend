@@ -1,0 +1,31 @@
+@import 'colors';
+
+.login{
+    height: 80vh;
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > button{
+        padding: 1rem 2rem;
+        color: $lightDark;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        > svg{
+            margin-left: 1rem;
+        }
+
+        &:hover{
+            color: $dark;
+        }
+    }
+}
