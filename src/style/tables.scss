@@ -1,0 +1,76 @@
+@import "colors";
+
+.tables {
+  height: 100vh;
+  background-color: $pink;
+
+  > main {
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    overflow-x: auto;
+
+    > h1{
+      text-align: center;
+      margin: 2rem;
+      font: 100 3rem 'Roboto'
+    }
+
+    > table {
+      width: 100%;
+      text-align: center;
+      // border-collapse: collapse;
+
+      tr {
+        background-color: whitesmoke;
+        &:last-child{
+          >td:first-child{
+            border-radius: 0 0 0 20px;
+          }
+          > td:last-child{
+            border-radius: 0 0 20px 0;
+          }
+        }
+      }
+
+      td,
+      th {
+        padding: 1rem;
+      }
+
+      th {
+        background-color: $dark;
+        color: white;
+        &:first-child {
+          border-radius: 20px 0 0 0;
+        }
+        &:last-child {
+          border-radius: 0 20px 0 0;
+        }
+      }
+
+      td {
+        color: $lightDark;
+
+        > a {
+          color: $red;
+        }
+
+        > img{
+          height: 30px;
+          width: 30px;
+          border-radius: 100%;
+        }
+
+        >button{
+          margin: 0.25rem;
+          color: $red;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
