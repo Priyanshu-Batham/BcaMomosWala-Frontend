@@ -1,0 +1,78 @@
+@import "colors";
+
+.profile {
+  height: 100vh;
+  background-color: $pink;
+
+  > main {
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+
+    > img {
+      height: 15rem;
+      width: 15rem;
+      border-radius: 100%;
+      box-shadow: 0 0 20px black;
+      margin: 4rem;
+    }
+
+    > h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    > div {
+      margin-bottom: 2rem;
+      > a {
+        background-color: $red;
+        color: white;
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        > svg {
+          margin-left: 1rem;
+        }
+
+        &:hover {
+          background-color: $darkRed;
+        }
+      }
+    }
+
+    > button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      > svg{
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: rgba(245, 245, 245, 0.864);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+    > main {
+      > img {
+        margin: 0 0 1rem;
+      }
+    }
+  }
+}

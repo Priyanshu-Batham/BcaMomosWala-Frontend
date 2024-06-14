@@ -5,7 +5,7 @@ import { FiShoppingCart, FiLogIn } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Header = ({ isAuthenticated = false }) => {
+const Header = ({ isAuthenticated = true }) => {
   return (
     <nav>
       <div>
