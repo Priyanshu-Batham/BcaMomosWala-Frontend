@@ -72,3 +72,55 @@
         }
     }
 }
+
+@media screen and (max-width: 820px) {
+    .dashboard{
+        height: 80vh;
+
+        > main section{
+            > div{
+                width: 40%;
+            }
+            > aside{
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard{
+        height: auto;
+        > main{
+            > article{
+                padding: 1rem 5px;
+
+                > div{
+                    height: 100px;
+                    width: 100px;
+
+                    > h3{
+                        font: 500 1.5rem 'Roboto';
+                    }
+                }
+            }
+
+            > section{
+                padding: 1rem;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                > div{
+                    width: 100%;
+                    flex-direction: row;
+                }
+
+                > aside{
+                    width: 100%;
+                    margin: 3rem 0;
+                }
+            }
+        }
+    }
+}
