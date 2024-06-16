@@ -6,3 +6,4 @@
 2:36:38 @login page completed
 2:49:37 @profile page completed
 3:20:50 @only Dashboard Left
+3:31:28 @doing dashboard

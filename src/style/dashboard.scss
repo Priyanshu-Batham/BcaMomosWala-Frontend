@@ -1,0 +1,74 @@
+@import 'colors';
+
+.dashboard{
+    background-color: $pink;
+    height: 100vh;
+
+    > main{
+        height: 100%;
+        max-width: 900px;
+        background-color: white;
+        margin: auto;
+
+        > article{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $dark;
+            padding: 2rem;
+
+            > div{
+                background-color: white;
+                border-radius: 100%;
+                text-align: center;
+                height: 120px;
+                width: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                > h3{
+                    font: 800 2rem 'Roboto';
+                }
+
+                > p{
+                    font: 300 1.1rem 'Roboto';
+                }
+            }
+        }
+
+        > section{
+            display: flex;
+            justify-content: space-between;
+            padding: 6rem;
+
+            > div{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                > a{
+                    white-space: nowrap;
+                    background-color: $dark;
+                    color: white;
+                    padding: 1rem;
+                    width: 50%;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin: 1rem;
+
+                    &:hover{
+                        background-color: $darkRed;
+                    }
+                }
+            }
+
+            > aside{
+                width: 50%;
+            }
+        }
+    }
+}
