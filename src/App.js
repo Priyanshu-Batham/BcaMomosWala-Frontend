@@ -15,6 +15,8 @@ import OrderDetails from './components/myOrders/OrderDetails';
 import Dashboard from './components/admin/Dashboard';
 import Users from './components/admin/Users';
 import Orders from './components/admin/Orders';
+import About from './components/about/About';
+import NotFound from './components/layout/NotFound';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/admin/dashboard" element={<Dashboard />} />
         <Route path="/admin/users" element={<Users />} />
         <Route path="/admin/orders" element={<Orders />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

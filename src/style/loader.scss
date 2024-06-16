@@ -1,0 +1,23 @@
+@import 'colors';
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: $pink;
+
+    > svg{
+        font-size: 15rem;
+        color: $red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.3;
+    }
+
+    > div > p{
+        font: 800 3rem 'Roboto';
+    }
+}

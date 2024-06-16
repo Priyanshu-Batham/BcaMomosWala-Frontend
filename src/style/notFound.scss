@@ -1,0 +1,47 @@
+@import 'colors';
+
+.notFound{
+    height: 80vh;
+    background-color: $pink;
+
+    > main{
+        height: 100%;
+        max-width: 900px;
+        margin: auto;
+        background-color: white;
+        padding: 7rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+
+        > div{
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+
+            > svg{
+                font-size: 4rem;
+            }
+
+            > h1{
+                font: 100 3rem 'Roboto';
+                margin: 0 1rem;
+            }
+        }
+
+        > p{
+            text-align: center;
+        }
+
+        > a{
+            background-color: $red;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            margin: 1rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+    }
+}
